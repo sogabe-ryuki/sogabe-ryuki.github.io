@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="曽我部龍輝のエンジニアポートフォリオ。ソフトウェア開発、要件整理、技術提案の経験と、個人開発PokerForge、設計に対する考え方を紹介します。">
+  <meta name="theme-color" content="#173e35">
+  <title>曽我部 龍輝 | Software Engineer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header wrap">
+    <a class="wordmark" href="#main" aria-label="ポートフォリオの先頭へ">RYUKI SOGABE<span class="wordmark-dot" aria-hidden="true"></span></a>
+    <nav aria-label="メインナビゲーション"><a href="#profile">自己紹介</a><a href="#projects">個人開発</a><a href="#philosophy">設計の考え方</a><a href="#career">業務経験</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow">SOFTWARE ENGINEER</p><h1 id="hero-title">業務を理解し、<br>設計と実装につなぐ<span class="accent">。</span></h1><p class="hero-description">ソフトウェア開発から、要件整理、技術提案、導入支援まで。<br class="desktop-break">業務上の課題と技術的な制約を捉え、実現できる方法を考えています。</p><a class="button" href="#projects">個人開発を見る <span aria-hidden="true">↓</span></a></div>
+      <aside class="profile-note" aria-label="氏名と関心領域"><div class="note-top"><span>RYUKI SOGABE</span><span aria-hidden="true">↗</span></div><div class="profile-identity"><p class="profile-name">曽我部 龍輝</p><p class="profile-role">Software Engineer</p></div><div class="note-bottom"><p class="note-caption">FOCUS</p><p class="focus-text">変更容易性<br>責務の分離<br>テスト容易性</p></div></aside>
+      <div class="hero-bottom"><span>SOFTWARE ENGINEERING / PORTFOLIO</span><a href="https://github.com/sogabe-ryuki" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <section id="profile" class="wrap section-pad" aria-labelledby="profile-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / PROFILE</p><h2 id="profile-title">私について</h2></div></div>
+      <div class="about-layout">
+        <div class="about-copy"><h3>課題を整理するところから、<br>動くものにするところまで。</h3><p>2023年に奈良工業高等専門学校 情報工学科を卒業し、株式会社FIXERに入社。ソフトウェア開発、技術提案、SaaS導入、顧客の業務改善支援に携わっています。</p><p>複数のプロジェクトに並行して参画し、案件ごとに異なる役割を担当しています。要件や業務フローを整理し、実現可能性と運用上の制約を踏まえて、設計・実装や導入の進め方を検討してきました。</p></div>
+        <dl class="profile-details"><div><dt>2023.03</dt><dd>奈良工業高等専門学校 情報工学科 卒業</dd></div><div><dt>2023.04 — 現在</dt><dd>株式会社FIXER<br>ソフトウェア開発・技術提案・導入支援・業務改善支援</dd></div><div><dt>関心のあること</dt><dd>業務ルールを明確にする設計、仕様や振る舞いを確かめるテスト、利用者の体験を支えるWebアプリケーション</dd></div></dl>
+      </div>
+    </section>
+    <section id="skills" class="tinted section-pad" aria-labelledby="skills-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">02 / SKILLS</p><h2 id="skills-title">技術経験</h2></div><p class="section-intro">開発・設計で触れてきた技術と、<br>継続して学んでいる領域。</p></div>
+        <div class="skill-grid">
+          <div class="skill-group"><h3>言語・フレームワーク</h3><ul class="skill-tags"><li>C# / .NET</li><li>Python</li><li>JavaScript / TypeScript</li><li>Vue.js / Nuxt</li></ul></div>
+          <div class="skill-group"><h3>データ・クラウド・連携</h3><ul class="skill-tags"><li>SQL Server</li><li>PostgreSQL</li><li>AWS</li><li>REST API / 外部システム連携</li></ul></div>
+          <div class="skill-group"><h3>設計・開発の取り組み</h3><ul class="skill-tags"><li>DDD</li><li>Clean Architecture</li><li>認可設計</li><li>AIを利用したソフトウェア開発</li></ul><p class="skill-note">DDDやクリーンアーキテクチャは自主的に学び、業務分析から設計・実装への落とし込みを検討しています。</p></div>
+        </div>
+        <div class="qualifications"><h3>取得資格</h3><ul><li>AWS Certified Solutions Architect – Associate</li><li>AWS Certified SysOps Administrator – Associate</li></ul></div>
+      </div>
+    </section>
+    <section id="projects" class="wrap section-pad" aria-labelledby="projects-title">
+      <div class="section-heading"><div><p class="eyebrow">03 / PERSONAL PROJECT</p><h2 id="projects-title">個人開発</h2></div><p class="section-intro">好きなことを、<br>自分の手でかたちにする。</p></div>
+      <article class="featured-project">
+        <div class="project-heading"><span class="project-category">POKER LEARNING WEB APP</span><span class="project-status">個人開発</span></div>
+        <div class="project-body">
+          <div><h3>PokerForge<span class="project-subtitle">ポーカーのポストフロップ学習PWA</span></h3><p class="project-summary">ポーカーの局面を見てアクションを選び、期待値（EV）の差から判断を振り返る多択トレーナー。既存のソルバーを組み込んだRust製の教材生成CLIと、Nuxt製の学習PWAで構成しています。</p><ul class="skill-tags project-stack" aria-label="PokerForgeの使用技術"><li>Rust</li><li>Nuxt 3 / Vue</li><li>TypeScript</li><li>Pinia</li><li>IndexedDB</li><li>Service Worker</li><li>JSON Schema / Ajv</li></ul><a class="button" href="https://djapzdusl4e66.cloudfront.net/" target="_blank" rel="noopener noreferrer">公開版を開く <span aria-hidden="true">↗</span></a><p class="link-note">ここで紹介するのはローカル開発版です。公開版とは画面・機能が異なります。</p></div>
+          <div class="project-context"><h4>制作の背景</h4><p>学生時代から親しんできたポーカーを題材に、学習を支えるアプリを個人開発しています。選んだアクションを単なる正誤で終わらせず、ソルバーの計算結果に基づいて振り返る構成にしています。</p><h4>主な機能</h4><ul class="feature-list"><li>局面のアクション再生と、多択形式の問題演習</li><li>EV差に基づく4段階の採点と、アクション別の頻度・EVの表示</li><li>回答履歴の端末内保存と、読み込み済み教材のオフライン利用への対応</li><li>ポーカー用語集と、LLMで解説を深めるためのプロンプトのコピー</li></ul></div>
+        </div>
+        <div id="project-screens" class="project-screens" aria-label="PokerForgeの画面">
+          <div class="screen-heading"><h4>アプリの画面</h4><p>ローカル開発版 / テスト用教材で撮影</p></div>
+          <div class="screen-grid">
+            <figure class="screen-primary"><a href="assets/pokerforge-question.jpg" target="_blank" rel="noopener noreferrer" aria-label="演習画面を拡大する"><img src="assets/pokerforge-question.jpg" alt="ポーカーテーブル上の局面と、フォールド・コール・レイズの選択肢を表示する演習画面。" width="390" height="844" loading="lazy"></a><figcaption><strong>演習画面</strong><span>局面を確認し、アクションを選択します。</span><a href="assets/pokerforge-question.jpg" target="_blank" rel="noopener noreferrer">拡大する ↗</a></figcaption></figure>
+            <figure class="screen-secondary"><a href="assets/pokerforge-home.jpg" target="_blank" rel="noopener noreferrer" aria-label="開始画面を拡大する"><img src="assets/pokerforge-home.jpg" alt="PokerForgeの開始画面。トレーニング開始ボタンとポーカー用語集へのリンク。" width="390" height="844" loading="lazy"></a><figcaption><strong>開始画面</strong><span>トレーニングと用語集への入口。</span><a href="assets/pokerforge-home.jpg" target="_blank" rel="noopener noreferrer">拡大する ↗</a></figcaption></figure>
+          </div>
+        </div>
+        <div class="project-design"><p class="eyebrow">DESIGN DECISIONS</p><h4>実装で意識したこと</h4><dl><div><dt>教材生成と学習UIの責務を分ける</dt><dd>ソルバーの計算結果を使った採点はRust側で事前に行い、PWAは保存された採点値を表示します。LLM向けには確定した数値を含む解説用プロンプトを用意し、正解の決定とは役割を分けています。</dd></div><div><dt>言語をまたぐデータ形式をそろえる</dt><dd>Rustのデータ型からJSON Schemaを出力し、TypeScriptの型と読み込み時の検証器を生成。教材を生成する側と利用する側で、受け渡す形式を共有しています。</dd></div><div><dt>回答前後で渡す情報を分ける</dt><dd>回答前の選択肢コンポーネントに渡すのは、選択肢の識別子とアクションです。採点値や解説は回答後に表示する構成にしています。</dd></div></dl></div>
+      </article>
+    </section>
+    <section id="philosophy" class="tinted section-pad" aria-labelledby="philosophy-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">04 / ENGINEERING PHILOSOPHY</p><h2 id="philosophy-title">設計で大切にしていること</h2></div></div>
+        <p class="philosophy-lead">業務ルールがどこにあり、何が何に責任を持つのか。<br class="desktop-break">変更時に迷わず手を入れられる構造を考えています。</p>
+        <div class="principle-grid">
+          <article class="principle"><span class="principle-number">01</span><h3>変更の影響を捉える</h3><p>ひとつの仕様変更が、無関係な箇所の修正まで広がらないように。業務ルールの置き場所と依存関係を意識し、変更の影響を見通せる設計を考えます。</p></article>
+          <article class="principle"><span class="principle-number">02</span><h3>責務を明確にする</h3><p>各コンポーネントが担うこと、実装する場所を明確にすることを重視しています。コードレビューでも、責務の分割や依存の向きが妥当かを確認します。</p></article>
+          <article class="principle"><span class="principle-number">03</span><h3>振る舞いを検証する</h3><p>テストが実装の細部に依存しすぎていないか、本来確かめたい仕様を検証できているか。テストのしやすさと、検証内容の妥当性を合わせて考えます。</p></article>
+        </div>
+        <p class="philosophy-footnote">DDDやクリーンアーキテクチャも、そのための選択肢のひとつです。手法を当てはめることを目的にせず、扱う課題や開発・運用の条件に合うかを検討しています。</p>
+      </div>
+    </section>
+    <section id="career" class="wrap section-pad" aria-labelledby="career-title">
+      <div class="section-heading"><div><p class="eyebrow">05 / PROFESSIONAL EXPERIENCE</p><h2 id="career-title">業務経験</h2></div><p class="section-intro">案件ごとに、<br>担当してきた役割を紹介します。</p></div>
+      <p class="career-note">以下は複数のプロジェクトでの経験です。守秘義務に配慮し、業務領域と担当範囲を一般化して記載しています。</p>
+      <div class="experience-list">
+        <article class="experience"><span class="experience-index">01</span><div><h3>医療情報システムの開発・保守</h3><p class="experience-role">開発・保守 / 技術提案</p><p>C#/.NETによる業務システム開発、データ整合性の確認、データ移行、例外処理、外部システム連携を担当。上長が最終判断する案件では、技術的な提案や実装を担っています。</p></div></article>
+        <article class="experience"><span class="experience-index">02</span><div><h3>医療系システムの設計・開発</h3><p class="experience-role">担当機能のリーダー</p><p>要求整理、仕様検討、設計、実装、テストを担当。チームで複数の設計方針を検討し、その選択肢を踏まえた方針の選定や関係者との協議・調整に携わっています。</p></div></article>
+        <article class="experience"><span class="experience-index">03</span><div><h3>医療系生成AI SaaSの導入支援</h3><p class="experience-role">要件整理 / 連携方式の検討 / 関係者調整</p><p>顧客の要件整理、外部システムとの連携方式の検討、導入作業の依存関係の整理を担当。技術面の助言と、顧客・関係者との交渉や調整に携わっています。</p></div></article>
+        <article class="experience"><span class="experience-index">04</span><div><h3>システム開発案件の提案</h3><p class="experience-role">課題ヒアリング / 技術提案</p><p>顧客の課題を聞き取り、業務フローや実現方法を検討。実現可能性と運用上の制約を整理し、技術的な提案につなげています。</p></div></article>
+        <article class="experience"><span class="experience-index">05</span><div><h3>顧客先での業務改善支援</h3><p class="experience-role">課題整理 / ツール開発 / 進め方の検討</p><p>顧客先への単独訪問を通じて業務課題を整理し、必要に応じたツール開発を担当。今後検討すべき課題や、改善を進める方法について顧客と議論しています。</p></div></article>
+      </div>
+    </section>
+    <section id="links" class="links section-pad" aria-labelledby="links-title"><div class="wrap contact-layout"><div><p class="eyebrow">LINKS</p><h2 id="links-title">関連リンク</h2></div><div class="contact-copy"><p>GitHub・LinkedInのプロフィールはこちらからご覧いただけます。</p><a class="text-link" href="https://github.com/sogabe-ryuki" target="_blank" rel="noopener noreferrer">GitHubを見る <span aria-hidden="true">↗</span></a><a class="text-link" href="https://www.linkedin.com/in/%E9%BE%8D%E8%BC%9D-%E6%9B%BD%E6%88%91%E9%83%A8-a607bb383" target="_blank" rel="noopener noreferrer">LinkedInを見る <span aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+  <footer class="site-footer wrap"><span>RYUKI SOGABE / PORTFOLIO</span><a href="#main">ページの先頭へ <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>
